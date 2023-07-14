@@ -1,25 +1,19 @@
 #include <stdio.h>
 
-/**
- * main - Entry point
- * Return: Always 0.
- */
-int main(void)
-{
-	int a;
+int main() {
+    int digit;
 
-	for (a = 0; a < 10; a++)
-	{
-		putchar(a + '0');
-		if (a < 9)
-			
-		{		
-	         	putchar(',');
-	        	putchar(' ');
-		}
-	}
+    for (digit = 0; digit <= 9; digit++) {
+        putchar(digit + '0');
 
-	putchar('\n');
+        if (digit != 9) {
+            putchar(',');
+            putchar(' ');
+        }
+    }
 
-	return (0);
+    putchar('\n');
+
+    return 0;
 }
+
