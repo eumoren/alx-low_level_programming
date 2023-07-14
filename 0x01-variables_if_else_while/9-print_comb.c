@@ -1,12 +1,13 @@
 #include <stdio.h>
 
-int main() {
-    int digit;
+int main - Prints all possible combinations of single-digit numbers.
+{
+    int a;
 
-    for (digit = 0; digit <= 9; digit++) {
-        putchar(digit + '0');
+    for (a = 0; a <= 9; a++) {
+        putchar(a + '0');
 
-        if (digit != 9) {
+        if (a != 9) {
             putchar(',');
             putchar(' ');
         }
